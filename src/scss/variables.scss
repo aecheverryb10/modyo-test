@@ -1,0 +1,32 @@
+$theme-colors: (
+  "primary": #00d2b5
+);
+$primary-color: #00d2b5;
+$grid-columns: 12;
+$grid-gutter-width: 0px;
+$font-size-base : 16;
+$font-family-sans-serif:
+  'Montserrat', sans-serif,
+  // Emoji fonts
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+//$btn-font-family: $secondary-font;
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 526px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 640px,//540
+  md: 740px,//720
+  lg: 960px,
+  xl: 1140px
+);
+
