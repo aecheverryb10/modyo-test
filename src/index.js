@@ -1,2 +1,4 @@
 import "./scss/styles.scss";
-import "./js/functions/";
+import "core-js/stable";
+import "regenerator-runtime/runtime";
+import "./js/testimonials";
