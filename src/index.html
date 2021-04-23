@@ -7,8 +7,8 @@
   <title>Modyo test</title>
 </head>
 <body>
-  <header class="bg-white p-3">
-    <nav class="main-nav text-center">
+  <header class="bg-white p-lg-3">
+    <nav class="main-nav text-lg-center py-4 py-lg-0" id="main-nav">
       <a href="#">Home</a>
       <a href="#features">Features</a>
       <a href="#about-us">About us</a>
@@ -20,10 +20,13 @@
   <div class="white-space"></div>
 
   <main>
-    <h1 class="text-center page-name">Landerz<span class="text-primary">.</span></h1>
+    <div class="mobile-nav d-flex justify-content-lg-center justify-content-between pl-3 pr-2 p-lg-0 bg-white">
+      <h1 class="text-center page-name">Landerz<span class="text-primary">.</span></h1>
+      <button class="d-lg-none btn p-1" id="mobile-nav-button"><span class="icon-menu h3"></span></button>
+    </div>
     <div class="main-section-container mx-auto py-5">
-      <div class="row">
-        <div class="col-lg-5 px-3 pr-lg-5 py-5 mt-4 main-text-container">
+      <div class="row flex-column-reverse flex-lg-row">
+        <div class="col-lg-5 px-3 pr-lg-5 py-5 mt-lg-4 main-text-container">
           <div class="main-text">
             <h1 class="mb-4">Grow your business faster</h1>
             <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia</p>
@@ -40,7 +43,7 @@
   <section id="features">
     <div class="container">
       <h2 class="mb-5">Features</h2>
-      <ul class="row features-list px-0">
+      <ul class="row features-list px-lg-0 px-3">
         <li class="col-lg-4 px-lg-3">
           <div class="feature-container p-4">
             <p class="feature-icon"><span class="icon-autorenew"></span></p>          
@@ -99,7 +102,7 @@
           <img src="./img/do_ui_kit_download_cta_floating_devices-2x.png" alt="prototypes image" class="img-fluid">
         </div>
         
-        <div class="col-lg-5 pl-lg-5 ml-auto mt-md-5">
+        <div class="col-lg-5 pl-lg-5 ml-auto mt-md-5 px-4 px-lg-0">
           <h2 class="text-left text-initial mb-4">Create interactive prototypes</h2>
           <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto autem molestias corrupti officia veniam.</p>
   
@@ -135,7 +138,7 @@
         <div class="col-lg-6 mb-5 mb-lg-0 pr-lg-4">
           <img src="./img/about_1.jpg" alt="about people" class="img-fluid img-shadow">
         </div>
-        <div class="col-lg-5 ml-auto pl-lg-5">
+        <div class="col-lg-5 ml-auto pl-lg-5 px-4 pr-lg-0">
           <h2 class="text-left mb-4 simple-subtitle">Create interactive prototypes</h2>
           <p class="mb-4">Eos cumque optio dolores excepturi rerum temporibus magni recusandae eveniet, totam omnis consectetur maxime quibusdam expedita dolorem dolor nobis dicta labore quaerat esse magnam unde, aperiam delectus! At maiores, itaque.</p>
           <a href="#" class="btn btn-primary">Learn More</a>
@@ -156,7 +159,7 @@
     </div>
   </section>
   <section id="contact">
-    <div class="container">
+    <div class="container px-3 px-lg-0">
       <h2 class="mb-5">Get in touch</h2>
       <form action="#" class="py-5 px-3 p-lg-5 col-lg-7 mx-auto bg-white contact-form">
         <h3 class="mb-5">Contact Form</h3>

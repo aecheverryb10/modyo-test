@@ -27,7 +27,7 @@ blockquote{
 
 
 section{
-  padding: 2em 0;
+  padding: 3em 0;
   background-color: #fff;
   &:nth-child(even){
     background-color: #f6f6f6;
@@ -35,7 +35,7 @@ section{
   h2{
     font-weight: 800;
     text-align: center;
-    font-size: 2.25em;
+    font-size: 2.2em;
     text-transform: capitalize;
   }
 }
@@ -63,7 +63,7 @@ header{
   position: fixed;
   width: 100%;
   box-shadow: 4px 0 20px -10px rgba(0, 0, 0, 0.2);
-  z-index: 100;
+  z-index: 101;
 }
 
 .white-space{
@@ -77,31 +77,18 @@ header{
 }
 
 .main-text{
-  max-width: 350px;
   h1{
-    font-size: 3.8em;
+    font-size: 2.5em;
     line-height: 1.15;
     font-weight: 800;
   }
 }
 
-.main-nav{
-  a{
-    color: #000;
-    font-weight: 500;
-    text-transform: capitalize;
-    &:hover{
-      text-decoration: none;
-      color: $primary-color !important;
-    }
-    &:not(:last-child){
-      margin-right: 2.5em;
-    }
-  }
-}
 
-.nav-item-active{
-  color: $primary-color !important;
+.main-image{
+  img{
+    max-width: 100%;
+  }
 }
 
 /*============================
@@ -203,6 +190,11 @@ header{
   }
   blockquote{
     font-size: 1.13em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
   }
 }
 
@@ -215,9 +207,27 @@ header{
   background: $primary-color;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
+
+  .main-text{
+    max-width: 350px;
+    h1{
+      font-size: 3.8em;
+      line-height: 1.15;
+    }
+  }
+
   section{
     padding: 4em 0;
+    h2{
+      font-size: 2.25em;
+    }
+  }
+  
+  .main-image{
+    img{
+      max-width: none;
+    }
   }
 }
 
